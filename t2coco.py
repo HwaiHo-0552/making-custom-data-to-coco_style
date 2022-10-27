@@ -2,7 +2,7 @@
 #        2022.05.20
 #Code Function:
 #              We parse the xml infos as json file
-#              type that could be traning for mmdetection or DeRT.
+#              type that could be training for mmdetection or DeRT.
 #              Making the customize dataset as type as COCO to input to mmdetection or DeRT.
 #              Please read https://cocodataset.org/#format-data to understand COCO data fomat
 #   !!! please pay attention about the function cmpRbbx which extract Rotation BBox and transfer to non-Rotation BBox !!!
