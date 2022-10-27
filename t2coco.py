@@ -19,10 +19,10 @@ import numpy as np
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-xmls = 'to_coco/xml_files'                                                         # path to xml files
-imgs_pth = 'to_coco/dataset_ids'                                                   # path to train.txt val.txt test.txt, each txt file including image name
-cls_id = {'blue_lesion':'0', 'orange_lesion':'1', 'red_lesion':'2'}                # please change the category and id following your task
-save = 'to_coco/outputs'                                                           # path for outputing train.json, val.json, test.json
+xmls = '.../xml_files'                                                         # path to xml files
+imgs_pth = '.../dataset_ids'                                                   # path to train.txt val.txt test.txt, each txt file including image name
+cls_id = {'blue':'0', 'orange':'1', 'red':'2'}                                 # please change the category and id following your task
+save = '.../outputs'                                                           # path for outputing train.json, val.json, test.json
 
 class xml2json:
     def __init__(self, root_pth, txt_pth, xmls_pth, cls_id, save_pth):
@@ -39,7 +39,7 @@ class xml2json:
         categories = []
         
         info = {
-                'description':'Coronary X-ray Images for stenosis detection',
+                'description':'Detection',
                 'contributor':'Kochi University of Technology',
                 'Date':'2022/10/25',
                 'Team':'KRLAB'
